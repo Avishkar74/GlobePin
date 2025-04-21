@@ -1,0 +1,17 @@
+[
+    {
+      "icon": "MdPlace",
+      "title": "Find us",
+      "details": "Electronic City , Bengaluru "
+    },
+    {
+      "icon": "IoCallSharp",
+      "title": "Call us",
+      "details": "9370120448"
+    },
+    {
+      "icon": "TbMailPlus",
+      "title": "Mail us",
+      "details": "avishkarc600@gmail.com"
+    }
+  ]

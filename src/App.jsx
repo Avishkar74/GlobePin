@@ -1,5 +1,6 @@
 import React from 'react'
 import "./App.css"
+import { AppLayout } from './components/layouts/AppLayout'
 import { Home } from './Pages/Home' // Importing the Home component
 import { About } from './Pages/About' 
 import { Contact } from './Pages/Contact'
@@ -9,25 +10,32 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element: <Home />,
+    path: "/",
+    element: <AppLayout />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path:"/about",
-    element: <About />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path:"/contact",
-    element: <Contact />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path:"/country/:id",
-    element: <Country />,
-    errorElement: <ErrorPage />,
+    children: [
+      {
+        path:"/",
+        element: <Home />,
+        
+      },
+      {
+        path:"/about",
+        element: <About />,
+      
+      },
+      {
+        path:"/contact",
+        element: <Contact />,
+      },
+      {
+        path:"/country",
+        element: <Country />,
+      }
+    ]
+      
   }
+  
 ])
 
 export default function App() {

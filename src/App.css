@@ -102,7 +102,7 @@ button {
 header {
   height: 10rem;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
-  background-color: #202020;
+  background-color: 	#1d1d1d;
   width: 100%;
 
   & .container {
@@ -393,6 +393,7 @@ country Card
 }
 .country-section {
   margin: 6.4rem auto 9.6rem auto;
+
   & .grid {
     gap: 3.2rem;
     max-width: 132rem;
